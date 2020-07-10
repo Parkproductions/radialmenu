@@ -39,6 +39,13 @@ menuConfigs = {
                     labels = {"imgsrc:trunk.png", "imgsrc:wagon.png","imgsrc:xmark.png", "imgsrc:firedown.png"},
                     commands = {"cookfood", "callcoach","ecancel","delfire"}
                 }
+                {
+                    navAngle = 285,                 -- Oritentation of wheel
+                    minRadiusPercent = 0.9,         -- Minimum radius of wheel in percentage
+                    maxRadiusPercent = 1.2,         -- Maximum radius of wheel in percentage
+                    labels = {"imgsrc:trunk.png", "imgsrc:wagon.png","imgsrc:xmark.png", "imgsrc:firedown.png"},
+                    commands = {"cookfood", "callcoach","ecancel","delfire"}
+                }
             }
         }
     }
