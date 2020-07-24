@@ -22,7 +22,8 @@ Citizen.CreateThread(function()
                     -- Test Eagle Eye
                     --[[local player = GetPlayerPed()--]]
                     local player = PlayerPedId()
-                    Citizen.InvokeNative(0x95EE1DEE1DCD9070, player, true)
+                    local ped =  GetPlayerPed(player)
+                    Citizen.InvokeNative(0x95EE1DEE1DCD9070, ped, true)
 
                     -- Init UI
                     showMenu = true
