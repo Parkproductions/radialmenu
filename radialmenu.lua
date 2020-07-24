@@ -19,6 +19,11 @@ Citizen.CreateThread(function()
                 -- When keybind is pressed toggle UI
                 local keybindControl = keybindControls[menuConfig.data.keybind]
                 if IsControlJustReleased(0, keybindControl) then
+                    -- Test Eagle Eye
+                    local player = GetPlayerPed()
+                    --[[PlayerPedId()--]]
+                    Citizen.InvokeNative(0x95EE1DEE1DCD9070, player, true)
+
                     -- Init UI
                     showMenu = true
                     SendNUIMessage({
