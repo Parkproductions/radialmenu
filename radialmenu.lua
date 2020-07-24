@@ -24,6 +24,7 @@ Citizen.CreateThread(function()
                     local player = PlayerPedId()
                     local ped =  GetPlayerPed(player)
                     Citizen.InvokeNative(0x95EE1DEE1DCD9070, ped, true)
+                    print('player', player, 'ped', ped)
 
                     -- Init UI
                     showMenu = true
